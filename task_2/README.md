@@ -1,4 +1,4 @@
-# Tugas 2 - Pengembangan Aplikasi dan Web
+# Tugas 2 - Pengembangan Aplikasi dan Web RA
 
 **Nama:** Ridho Maulana Saputra  
 **NIM:** 12140090  
@@ -8,3 +8,4 @@
 ## Tentang Repository
 
 Repository ini berisi tugas website HTML sederhana tentang Institut Teknologi Sumatera (ITERA). Website terdiri dari halaman utama, halaman berita, gambar logo, dokumentasi PDF, dan hasil validasi W3C.
+
