@@ -1,0 +1,183 @@
+body {
+  background-color: #eef2ef;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 30px 15px;
+}
+
+.halaman {
+  background-color: #ffffff;
+  border: 1px solid #cfd8d2;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.judul {
+  text-align: center;
+  border-bottom: 3px solid #021509;
+  padding-bottom: 12px;
+  margin-bottom: 22px;
+}
+
+.judul h1 {
+  color: #021509;
+  margin: 0 0 6px 0;
+}
+
+.judul p {
+  color: #46564c;
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #d5ddd7;
+  border-radius: 6px;
+  padding: 15px 18px;
+  margin: 0 0 18px 0;
+}
+
+legend {
+  color: #021509;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.baris {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.kolom {
+  margin-bottom: 14px;
+}
+
+.kolom label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.label-teks {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 6px 0;
+}
+
+.kolom input,
+.kolom select,
+.kolom textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #b9c4bd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.kolom label input {
+  width: auto;
+  margin-right: 6px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #021509;
+}
+
+.tombol {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #021509;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tombol:hover {
+  background-color: #cfd8d2;
+  color: #021509;
+}
+
+.tabel-detail {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.tabel-detail th,
+.tabel-detail td {
+  border: 1px solid #cfd8d2;
+  padding: 10px;
+  text-align: left;
+}
+
+.tabel-detail th {
+  background-color: #021509;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tabel-detail td:first-child {
+  width: 38%;
+  font-weight: bold;
+  color: #46564c;
+}
+
+.tabel-detail tr:nth-child(even) {
+  background-color: #f3f6f4;
+}
+
+.tabel-detail tr:hover {
+  background-color: #e0e6e2;
+}
+
+.kembali {
+  margin-top: 18px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 15px 8px;
+  }
+
+  .halaman {
+    padding: 18px 12px;
+  }
+
+  .baris {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .judul h1 {
+    font-size: 24px;
+  }
+
+  .tabel-detail {
+    font-size: 13px;
+  }
+
+  .tabel-detail th,
+  .tabel-detail td {
+    padding: 8px;
+  }
+
+  .tabel-detail td:first-child {
+    width: 35%;
+  }
+}

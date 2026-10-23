@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Membership Gym Belwis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="halaman">
+
+    <div class="judul">
+      <h1>Gym Belwis</h1>
+      <p>Formulir Pendaftaran Membership</p>
+    </div>
+
+    <form action="detail.html" method="get" class="form-daftar">
+
+        <fieldset>
+            <legend>Data Diri</legend>
+
+            <div class="baris">
+                <div class="kolom">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Contoh: Udin voldigoad" required>
+                </div>
+
+                <div class="kolom">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Contoh: udin@example.com" required>
+                </div>
+            </div>
+
+            <div class="baris">
+                <div class="kolom">
+                    <label for="telepon">Nomor Telepon</label>
+                    <input type="text" id="telepon" name="telepon" pattern="[0-9]{10,13}" placeholder="08xxxxxxxxxx" required>
+                </div>
+
+                <div class="kolom">
+                    <label for="lahir">Tanggal Lahir</label>
+                    <input type="date" id="lahir" name="tanggal_lahir">
+                </div>
+            </div>
+
+             <div class="kolom">
+                <p class="label-teks">Jenis Kelamin</p>
+                <label><input type="radio" name="gender" value="pria"> Pria</label>
+                <label><input type="radio" name="gender" value="wanita"> Wanita</label>
+            </div>
+
+            <div class="kolom">
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" rows="3" placeholder="Alamat lengkap"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detail Membership</legend>
+
+            <div class="baris">
+                <div class="kolom">
+                    <label for ="paket">Paket Membership</label>
+                    <select id="paket" name="paket">
+                        <option value="1-bulan">1 Bulan</option>
+                        <option value="3-bulan">3 Bulan</option>
+                        <option value="6-bulan">6 Bulan</option>
+                        <option value="12-bulan">12 Bulan</option>
+                    </select>
+                </div>
+
+                <div class="kolom">
+                    <label for="mulai">Tanggal Mulai</label>
+                    <input type="date" id="mulai" name="mulai">
+                </div>
+            </div>
+
+            <div class="baris">
+                <div class="kolom">
+                    <label for="jam">Jam Latihan Favorit</label>
+                    <input type="time" id="jam" name="jam">
+                </div>
+
+                <div class="kolom">
+                    <label for="foto">Foto Diri</label>
+                    <input type="file" id="foto" name="foto">
+                </div>
+            </div>
+
+            <div class="kolom">
+                <p class="label-teks">Fasilitas Tambahan</p>
+                <label><input type="checkbox" name="fasilitas" value="locker"> Locker</label>
+                <label><input type="checkbox" name="fasilitas" value="trainer"> Personal Trainer</label>
+                <label><input type="checkbox" name="fasilitas" value="handuk"> Handuk</label>
+            </div>
+        </fieldset>
+
+         <div class="kolom">
+            <label><input type="checkbox" name="setuju" value="ya" required> Saya menyetujui peraturan Gym Belwis</label>
+        </div>
+
+      <button type="submit" class="tombol">Daftar Sekarang</button>
+
+    </form>
+
+</body>
+</html>
